@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farmers area</title>
+
+  <style>
+    .csp{
+      font-size:100px;
+      color:white;
+
+    }
+    img{
+      height:200px;
+      width:1500px;
+      object-fit:container;
+
+    }
+    body{
+      background-color:#66b37a;
+    }
+    .heading
+    {
+      font-size:100px;
+      align:center;
+      color:red;
+    }
+    .container
+    {
+      position:relative;
+    }
+    .container img{
+      max width:100%;
+      height:100%;
+    }
+    .textdata
+    {
+      position:absolute;
+      top:5%;
+      left:20%;
+      padding:10%;
+    }
+    .textdata h1{
+      color:green;
+      font-size:100px;
+    }
+    .lbutton
+    {
+      background-color: yellow;
+      left=25%;
+      font-size:240%;
+    }
+    .logom{
+      top=5%;
+      width:350px;
+      float:right;
+    }
+    /*************************/
+/* Styling Header */
+/*************************/
+header{
+
+	overflow: hidden;
+}
+
+#top-header{
+
+	text-align: center;
+	height: 60px;
+}
+
+/****************/
+/* Styling Logo */
+/****************/
+#logo{
+	float: Top;
+	padding: none;
+	margin: none;
+	height: 60px;
+	width: 100%;
+}
+
+
+#logo img{
+	width: 100%;
+	float: right;
+	padding: 10px 0px;
+}
+
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+	float: Top;
+	width: 70%;
+	height: 100%;
+	margin: none;
+}
+
+#menu ul{
+	text-align: right;
+	float: right;
+	margin: none;
+	background: #0074D9;
+}
+
+#menu li{
+	display: inline-block;
+	padding: none;
+	margin: none;
+}
+
+#menu li a, #menu li span{
+	display: inline-block;
+	padding: 0em 1.5em;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 60px;
+}
+
+#menu li a{
+
+	color: #FFF;
+}
+
+#menu li:hover a, #menu li span{
+	background: #FFF;
+	color: #0074D9;
+	border-left: 1px solid #0074D9;
+	text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+
+  	<!-- Top header menu containing
+  		logo and Navigation bar -->
+  	<div id="top-header">
+
+  		<!-- Logo -->
+		<h1 class="csp"><center>Farmers Area</center></h1>
+
+
+
+  		<!-- Navigation Menu -->
+  		<nav>
+  		<div id="menu">
+  			<ul>
+  				<li class="active"><a href="#">Home</a></li>
+  				<li><a href="organicfarming.html">Organic Farming</a></li>
+  				<li><a href="soiltesting.html">Soil Testing</a></li>
+  				<li><a href="govtschemes.html">Schemes</a></li>
+  			</ul>
+  		</div>
+  		</nav>
+  	</div>
+
+  	<!-- Image menu in Header to contain an Image and
+  		a sample text over that image -->
+  	<div id="header-image-menu">
+
+  	</div>
+  </header>
+  <div class="container">
+<img src="https://tse3.mm.bing.net/th?id=OIP.hqgXmy-r13g-63xcvlz6AwHaE7&pid=Api&P=0&h=180.jpg">
+  <div class="textdata">
+      <button class="lbutton" ><a href="organicfarming.html">Organic farming</button><br>
+      <br>
+      <button class="lbutton"><a href="soiltesting.html">Soil testing</button><br>
+      <br>
+      <button class="lbutton" ><a href="govtschemes.html">Government Schemes</button><br>
+       <br>
+      <button class="lbutton"><a href="frtbot.html">chatbot</button><br>
+  </div>
+  </div>
+<!-- HTML Buttons -->
+<button class="lbutton" onclick="navigateToPage('organicfarming.html')">Organic Farming</button>
+<button class="lbutton" onclick="navigateToPage('soiltesting.html')">Soil Testing</button>
+<button class="lbutton" onclick="navigateToPage('govtschemes.html')">Government Schemes</button>
+
+<script>
+// JavaScript Function to Navigate to a Page
+function navigateToPage(pageURL) {
+    // Change the window location to the specified page URL
+    window.location.href = pageURL;
+}
+</script>
+
+</body>
+</html>
